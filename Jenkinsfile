@@ -10,7 +10,7 @@ pipeline {
                 }
             }
         }
-        steps{
+        steps('build1'){
             sh '''
                 ls -la
                 node --version
