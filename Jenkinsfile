@@ -9,8 +9,7 @@ pipeline {
                     reuseNode true
                 }
             }
-        }
-        steps('build1'){
+                    steps(){
             sh '''
                 ls -la
                 node --version
@@ -19,6 +18,7 @@ pipeline {
                 npm run buld
                 ls -la
             '''
+        }
         }
     }
 }
